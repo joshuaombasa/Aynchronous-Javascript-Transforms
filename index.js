@@ -19,6 +19,6 @@ function getApproval() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve('Approved')
-        })
+        }, 2000)
     })
 }
