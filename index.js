@@ -1,18 +1,18 @@
 let approval = 'Not Approved'
 const approvalStatus = document.getElementById("approval-status")
 
-// function getApproval(callback) {
-//     setTimeout(() => {
-//         approval = 'Approved'
-//         callback()
-//     },2000)
-// }
+function getApproval(callback) {
+    setTimeout(() => {
+        approval = 'Approved'
+        callback()
+    },2000)
+}
 
-// getApproval(() => {
-//     approvalStatus.textContent = approval
-// })
+getApproval(() => {
+    approvalStatus.textContent = approval
+})
 
-// approvalStatus.textContent = approval
+approvalStatus.textContent = approval
 
 
 function getApproval() {
@@ -23,12 +23,12 @@ function getApproval() {
     })
 }
 
-// getApproval().then(
-//     (newApproval) => {
-// approvalStatus.textContent = newApproval
+getApproval().then(
+    (newApproval) => {
+approvalStatus.textContent = newApproval
 
-//     }
-// )
+    }
+)
 
 async function setApprovalText() {
     const approvalPromise = getApproval();
