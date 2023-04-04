@@ -31,8 +31,10 @@ function getApproval() {
 // )
 
 async function setApprovalText() {
-    const approvalPromise = getApproval()
+    const approvalPromise = getApproval();
     approvalStatus.textContent = await approvalPromise
 }
+
+setApprovalText()
 
 approvalStatus.textContent = approval
