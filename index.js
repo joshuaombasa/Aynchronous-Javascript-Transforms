@@ -23,11 +23,11 @@ function getApproval() {
     })
 }
 
-getApproval().then(
-    (newApproval) => {
-approvalStatus.textContent = newApproval
+// getApproval().then(
+//     (newApproval) => {
+// approvalStatus.textContent = newApproval
 
-    }
-)
+//     }
+// )
 
 approvalStatus.textContent = approval
