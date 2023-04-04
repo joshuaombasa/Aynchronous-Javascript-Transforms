@@ -30,4 +30,8 @@ function getApproval() {
 //     }
 // )
 
+async function setApprovalText() {
+    
+}
+
 approvalStatus.textContent = approval
