@@ -8,11 +8,11 @@ const approvalStatus = document.getElementById("approval-status")
 //     },2000)
 // }
 
-getApproval(() => {
-    approvalStatus.textContent = approval
-})
+// getApproval(() => {
+//     approvalStatus.textContent = approval
+// })
 
-approvalStatus.textContent = approval
+// approvalStatus.textContent = approval
 
 
 function getApproval() {
@@ -22,3 +22,12 @@ function getApproval() {
         }, 2000)
     })
 }
+
+getApproval().then(
+    (newApproval) => {
+approvalStatus.textContent = newApproval
+
+    }
+)
+
+approvalStatus.textContent = approval
