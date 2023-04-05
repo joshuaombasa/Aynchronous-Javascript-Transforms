@@ -38,3 +38,4 @@ async function setApprovalText() {
 setApprovalText()
 
 approvalStatus.textContent = approval
+
